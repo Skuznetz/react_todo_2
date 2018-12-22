@@ -11,3 +11,4 @@ const el = (
         </ul>
         </div>)
 )
+ReactDOM.render(el,document.getElementById('root'))
