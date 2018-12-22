@@ -10,5 +10,5 @@ const el = (
             <li>2</li>
         </ul>
         </div>)
-)
+
 ReactDOM.render(el,document.getElementById('root'))
