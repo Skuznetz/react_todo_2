@@ -13,7 +13,7 @@ const el = (
     <div>
         <h1>Todo list</h1>
         <input placeholder="search" />
-        
+        <TodoList />
         </div>)
 
 ReactDOM.render(<App />,document.getEle
