@@ -9,6 +9,11 @@ const TodoList = () => {
         </ul>
     )
 }
+const AppHeader = () => {
+    return (
+        <h1>Todo List</h1>
+    )
+}
 const el = (
     <div>
         <h1>Todo list</h1>
