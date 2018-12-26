@@ -16,7 +16,7 @@ const AppHeader = () => {
 }
 const el = (
     <div>
-        <h1>Todo list</h1>
+        <AppHeader />
         <input placeholder="search" />
         <TodoList />
         </div>)
