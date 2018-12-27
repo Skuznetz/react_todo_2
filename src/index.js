@@ -14,6 +14,11 @@ const AppHeader = () => {
         <h1>Todo List</h1>
     )
 }
+const Search = () => {
+    return (
+        <input placeholder="search" />
+    )
+}
 const el = (
     <div>
         <AppHeader />
