@@ -22,7 +22,7 @@ const Search = () => {
 const el = (
     <div>
         <AppHeader />
-        <input placeholder="search" />
+        <Search />
         <TodoList />
         </div>)
 
