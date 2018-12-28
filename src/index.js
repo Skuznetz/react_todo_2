@@ -19,11 +19,13 @@ const Search = () => {
         <input placeholder="search" />
     )
 }
-const el = (
+const App = () =>{
+    return (
     <div>
         <AppHeader />
         <Search />
         <TodoList />
-        </div>)
+</div>)
+}
 
 ReactDOM.render(<App />,document.getEle
