@@ -9,11 +9,7 @@ const TodoList = () => {
         </ul>
     )
 }
-const AppHeader = () => {
-    return (
-        <h1>Todo List</h1>
-    )
-}
+
 const Search = () => {
     return (
         <input placeholder="search" />
