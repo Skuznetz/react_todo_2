@@ -10,11 +10,7 @@ const TodoList = () => {
     )
 }
 
-const Search = () => {
-    return (
-        <input placeholder="search" />
-    )
-}
+
 const App = () =>{
     return (
     <div>
