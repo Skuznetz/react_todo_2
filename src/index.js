@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import AppHeader from './components/app-header'
-import Search from './component/search'
-import TodoList from './todo-list'
+import AppHeader from './components/app-header/app-header.js'
+import Search from './components/search/search.js'
+import TodoList from './components/todo-list/todo-list.js'
 
 
 const App = () =>{
