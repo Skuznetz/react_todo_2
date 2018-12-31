@@ -16,7 +16,7 @@ const App = () =>{
     <div>
         <AppHeader />
         <Search />
-        <TodoList />
+        <TodoList todos = {todoData} />
 </div>)
 }
 
