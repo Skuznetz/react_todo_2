@@ -3,9 +3,10 @@ import React from 'react'
 import TodoListItem from '../todo-list-item/todo-list-item.js'
 const TodoList = ({todos}) => {
     const elements = todos.map((item) => {
+        const {id,...itemProps} = item
         return (
-            <li key={item.id}> 
-                <TodoListItem {...item} />
+            <li key={id}> 
+                <TodoListItem {...itemProps} />
             </li>
         )
     })
