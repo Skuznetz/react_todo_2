@@ -23,6 +23,6 @@ const TodoListItem = ({label,important = false}) => {
               onClick={onDeleted}>
         <i className="fa fa-trash-o" />
       </button>
-    </div>
+    </div>)
 }
 export default TodoListItem
