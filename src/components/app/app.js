@@ -1,11 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 import AppHeader from '../app-header'
 import Search from '../search'
 import TodoList from '../todo-list'
 import ItemStatusFilter from '../item-status-filter'
 
+import './app.css'
 
 const App = () =>{
     const todoData = [
@@ -14,9 +14,12 @@ const App = () =>{
         {label: 'уходим',important: false,id:3}        
     ]
     return (
-    <div>
-        <AppHeader />
-        <Search />
+    <div className="todo-app">
+        <AppHeader toDo={1} done={3} />
+        <div className="top-panel d-flex">
+            <Search />
+            <ItemStatusFilter />
+        </div>
         <TodoList todos = {todoData} />
 </div>)
 }
