@@ -1,7 +1,9 @@
 import React from 'react'
 import './todo-list-item.css'
 
-const TodoListItem = ({label,important = false}) => {
+class TodoListItem extends React.Component {
+    render() {
+        const {label,important = false} = this.props
     const style = {
         color: important ? 'aqua' : 'black'
     }
@@ -22,6 +24,7 @@ const TodoListItem = ({label,important = false}) => {
               className="btn btn-outline-danger btn-sm float-right">
         <i className="fa fa-trash-o" />
       </button>
-    </div>)
+</div>)
+    }
 }
 export default TodoListItem
