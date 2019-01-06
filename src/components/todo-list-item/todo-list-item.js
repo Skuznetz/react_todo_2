@@ -2,6 +2,10 @@ import React from 'react'
 import './todo-list-item.css'
 
 class TodoListItem extends React.Component {
+    constructor(){
+        super()
+        
+    }
     render() {
         const {label,important = false} = this.props
     const style = {
