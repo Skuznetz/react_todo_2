@@ -1,6 +1,7 @@
 import React from 'react'
 
-const ItemStatusFilter = () => {
+class ItemStatusFilter extends React.Component {
+    render(){
     return (
         <div className="btn-group">
             <button type="button" 
@@ -11,6 +12,6 @@ const ItemStatusFilter = () => {
                     className="btn btn-outline-secondary">Done</button>
         </div>
     )
-
+    }
 }
 export default ItemStatusFilter
