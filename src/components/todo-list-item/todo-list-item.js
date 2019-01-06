@@ -18,7 +18,8 @@ class TodoListItem extends React.Component {
         className="todo-list-item" >
         <span
         className="todo-list-item-label"
-        style={style}>
+        style={style}
+        onClick={this.onLabelClick}>
         {label}
 </span>
      
