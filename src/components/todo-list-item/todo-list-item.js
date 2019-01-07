@@ -12,7 +12,7 @@ class TodoListItem extends React.Component {
     render() {
         const {done} = this.state
         const {label,important = false} = this.props
-        let = classNames = 'todo-list-item'
+        let classNames = 'todo-list-item'
         if (done) {
             classNames += 'done'
         }
