@@ -12,12 +12,13 @@ class TodoListItem extends React.Component {
     render() {
         const {done} = this.state
         const {label,important = false} = this.props
+        let = classNames = 'todo-list-item'
     const style = {
         color: important ? 'aqua' : 'black'
     }
     return(
     <div 
-        className="todo-list-item" >
+        className={classNames} >
         <span
         className="todo-list-item-label"
         style={style}
