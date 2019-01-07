@@ -6,7 +6,9 @@ class TodoListItem extends React.Component {
         done: false
     }
     onLabelClick = ()=>{
-            console.log(`Done: ${this.props.label}`)
+        this.setState({
+            done: true
+        })
         }
     
     render() {
