@@ -13,6 +13,9 @@ class TodoListItem extends React.Component {
         const {done} = this.state
         const {label,important = false} = this.props
         let = classNames = 'todo-list-item'
+        if (done) {
+            classNames += 'done'
+        }
     const style = {
         color: important ? 'aqua' : 'black'
     }
