@@ -12,11 +12,12 @@ class TodoListItem extends React.Component {
         }
     
     render() {
-        const {done} = this.state
+       
         const {label,important = false} = this.props
+         const {done} = this.state
         let classNames = 'todo-list-item'
         if (done) {
-            classNames += 'done'
+            classNames += ' done'
         }
     const style = {
         color: important ? 'aqua' : 'black'
@@ -32,7 +33,7 @@ class TodoListItem extends React.Component {
 </span>
      
       <button type="button"
-              className="btn btn -outline-success btn-sm float-right" >
+              className="btn btn-outline-success btn-sm float-right" >
         <i className="fa fa-exclamation" />
       </button>
       <button type="button" 
