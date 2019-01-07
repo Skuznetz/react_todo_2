@@ -10,6 +10,7 @@ class TodoListItem extends React.Component {
         }
     
     render() {
+        const {done} = this.state
         const {label,important = false} = this.props
     const style = {
         color: important ? 'aqua' : 'black'
