@@ -14,8 +14,8 @@ class TodoListItem extends React.Component {
     
     render() {
        
-        const {label,important = false} = this.props
-         const {done} = this.state
+        const {label} = this.props
+         const {done,important} = this.state
         let classNames = 'todo-list-item'
         if (done) {
             classNames += ' done'
