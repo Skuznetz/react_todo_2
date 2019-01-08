@@ -11,6 +11,11 @@ class TodoListItem extends React.Component {
             done: true
         })
         }
+    onImportant = ()=>{
+        this.setState({
+            important: true
+        })
+    }
     
     render() {
        
