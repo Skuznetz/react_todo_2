@@ -20,15 +20,15 @@ class TodoListItem extends React.Component {
         if (done) {
             classNames += ' done'
         }
-    const style = {
-        color: important ? 'aqua' : 'black'
-    }
+        if (important) {
+            classNames += ' important'
+        }
+   
     return(
     <div 
         className={classNames} >
         <span
         className="todo-list-item-label"
-        style={style}
         onClick={this.onLabelClick}>
         {label}
 </span>
