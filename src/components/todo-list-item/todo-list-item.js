@@ -12,8 +12,9 @@ class TodoListItem extends React.Component {
         })
         }
     onImportant = ()=>{
-        this.setState({
-            important: true
+        this.setState((state)=>{
+            return {
+            important: !state.important}
         })
     }
     
@@ -39,8 +40,8 @@ class TodoListItem extends React.Component {
 </span>
      
       <button type="button"
-              onClick={this.onImportant}
-              className="btn btn-outline-success btn-sm float-right" >
+              className="btn btn-outline-success btn-sm float-right" 
+              onClick={this.onImportant}>
         <i className="fa fa-exclamation" />
       </button>
       <button type="button" 
