@@ -7,12 +7,13 @@ import ItemStatusFilter from '../item-status-filter'
 
 import './app.css'
 
-const App = () =>{
-    const todoData = [
+export default class App extends Component {
+    state ={ todoData = [
         {label: 'Просыпаемся',important: false,id: 1},
         {label: 'Завтракаем',important: false,id:2},
         {label: 'уходим',important: false,id:3}        
-    ]
+    ]}
+    render(){
     return (
     <div className="todo-app">
         <AppHeader toDo={1} done={3} />
@@ -22,7 +23,6 @@ const App = () =>{
         </div>
         <TodoList todos = {todoData}
                   onDeleted={(id) => console.log('del',id)} />
-</div>)
+</div>)}
 }
 
-export default App
