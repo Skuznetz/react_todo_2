@@ -21,7 +21,7 @@ export default class App extends Component {
             <Search />
             <ItemStatusFilter />
         </div>
-        <TodoList todos = {todoData}
+        <TodoList todos = {this.state.todoData}
                   onDeleted={(id) => console.log('del',id)} />
 </div>)}
 }
