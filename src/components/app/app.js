@@ -8,7 +8,7 @@ import ItemStatusFilter from '../item-status-filter'
 import './app.css'
 
 export default class App extends Component {
-    state ={ todoData = [
+    state ={ todoData: [
         {label: 'Просыпаемся',important: false,id: 1},
         {label: 'Завтракаем',important: false,id:2},
         {label: 'уходим',important: false,id:3}        
