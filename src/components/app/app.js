@@ -13,6 +13,10 @@ export default class App extends Component {
         {label: 'Завтракаем',important: false,id:2},
         {label: 'уходим',important: false,id:3}        
     ]}
+
+    deliteItem=(id)=>{
+        console.log(id)
+    }
     render(){
     return (
     <div className="todo-app">
