@@ -8,7 +8,7 @@ const TodoList = ({todos,onDeleted}) => {
         return (
             <li key={id} className="list-group-item"> 
                 <TodoListItem {...itemProps}
-                onDeleted={()=>console.log('Deleted')} />
+                onDeleted={()=>onDeleted(id)} />
             </li>
         )
     })
