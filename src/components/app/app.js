@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{Component} from 'react'
 
 import AppHeader from '../app-header'
 import Search from '../search'
