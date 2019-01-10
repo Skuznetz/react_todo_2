@@ -15,7 +15,9 @@ export default class App extends Component {
     ]}
 
     deliteItem=(id)=>{
-        console.log(id)
+        this.setState(({todoData})=>{
+            todoData: todoData
+        })
     }
     render(){
     return (
@@ -26,7 +28,7 @@ export default class App extends Component {
             <ItemStatusFilter />
         </div>
         <TodoList todos = {this.state.todoData}
-                  onDeleted={(id) => console.log('del',id)} />
+                  onDeleted={this.deleteItem} />
 </div>)}
 }
 
