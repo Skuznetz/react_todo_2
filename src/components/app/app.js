@@ -30,7 +30,11 @@ export default class App extends Component {
     }
 
     ItemAdd = (text) => {
-        console.log('Add',text)
+        const newItem={
+            label: text,
+            important: false,
+            id: this.maxId++
+        }
     }
     render(){
     return (
