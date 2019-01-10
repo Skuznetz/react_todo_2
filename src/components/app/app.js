@@ -16,7 +16,7 @@ export default class App extends Component {
 
     deliteItem=(id)=>{
         this.setState(({todoData})=>{
-            todoData: todoData
+            const idx = todoData.findIndex((el)=>el.id ===id)
         })
     }
     render(){
