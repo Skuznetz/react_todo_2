@@ -35,6 +35,15 @@ export default class App extends Component {
             important: false,
             id: this.maxId++
         }
+        this.setState(({ todoData }) => {
+            const newArr= [
+                ...todoData,
+                newItem
+            ]
+            return {
+                todoData: newArr
+            }
+        })
     }
     render(){
     return (
