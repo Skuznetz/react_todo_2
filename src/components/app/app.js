@@ -14,7 +14,7 @@ export default class App extends Component {
         {label: 'уходим',important: false,id:3}        
     ]}
 
-    deliteItem=(id)=>{
+    deleteItem=(id)=>{
         this.setState(({todoData})=>{
             const idx = todoData.findIndex((el)=>el.id ===id)
             const newArray = [
