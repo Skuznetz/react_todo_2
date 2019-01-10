@@ -27,6 +27,10 @@ export default class App extends Component {
             }
         })
     }
+
+    ItemAdd = (text) => {
+        console.log('Add',text)
+    }
     render(){
     return (
     <div className="todo-app">
