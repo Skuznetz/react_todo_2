@@ -9,6 +9,7 @@ import ItemAddForm from '../item-add-form'
 import './app.css'
 
 export default class App extends Component {
+    maxId = 100
     state ={ todoData: [
         {label: 'Просыпаемся',important: false,id: 1},
         {label: 'Завтракаем',important: false,id:2},
