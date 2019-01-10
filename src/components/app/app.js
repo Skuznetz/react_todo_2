@@ -37,7 +37,7 @@ export default class App extends Component {
         </div>
         <TodoList todos = {this.state.todoData}
                   onDeleted={this.deleteItem} />
-        <ItemAddForm />
+        <ItemAddForm onItemAdd={this.ItemAdd} />
 </div>)}
 }
 
