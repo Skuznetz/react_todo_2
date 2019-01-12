@@ -48,6 +48,9 @@ export default class App extends Component {
     onToggleImportant = (id) => {
         console.log('important',id)
     }
+    onToggleDone = (id) => {
+        console.log('done',id)
+    }
     render(){
     return (
     <div className="todo-app">
