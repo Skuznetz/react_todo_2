@@ -7,12 +7,7 @@ class TodoListItem extends React.Component {
         important: false
     }
  
-    onImportant = ()=>{
-        this.setState((state)=>{
-            return {
-            important: !state.important}
-        })
-    }
+ 
     
     render() {
        
