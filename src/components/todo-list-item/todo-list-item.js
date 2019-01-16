@@ -6,12 +6,7 @@ class TodoListItem extends React.Component {
         done: false,
         important: false
     }
-    onLabelClick = ()=>{
-        this.setState(({done})=>{
-            return {
-            done: !done}
-        })
-        }
+ 
     onImportant = ()=>{
         this.setState((state)=>{
             return {
