@@ -42,7 +42,7 @@ class TodoListItem extends React.Component {
      
       <button type="button"
               className="btn btn-outline-success btn-sm float-right" 
-              onClick={this.onImportant}>
+              onClick={this.onToggleImportant}>
         <i className="fa fa-exclamation" />
       </button>
       <button type="button" 
