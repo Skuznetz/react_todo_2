@@ -21,7 +21,7 @@ class TodoListItem extends React.Component {
     
     render() {
        
-        const {label,onDeleted} = this.props
+        const {label,onDeleted,onToggleImportant,onToggleDone} = this.props
          const {done,important} = this.state
         let classNames = 'todo-list-item'
         if (done) {
