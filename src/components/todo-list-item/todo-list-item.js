@@ -2,17 +2,11 @@ import React from 'react'
 import './todo-list-item.css'
 
 class TodoListItem extends React.Component {
-    state = {
-        done: false,
-        important: false
-    }
  
- 
-    
     render() {
        
         const {label,onDeleted,onToggleImportant,onToggleDone,important,done} = this.props
-         const {done,important} = this.state
+        
         let classNames = 'todo-list-item'
         if (done) {
             classNames += ' done'
