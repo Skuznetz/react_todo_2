@@ -15,7 +15,12 @@ export default class App extends Component {
         {label: 'Завтракаем',important: false,id:2},
         {label: 'уходим',important: false,id:3}        
     ]}
-
+    
+    createTodoItem(label) {
+        return {
+            label,important:false,done:false,id: this.maxId++
+        }
+    }
     deleteItem=(id)=>{
         this.setState(({todoData})=>{
             const idx = todoData.findIndex((el)=>el.id ===id)
