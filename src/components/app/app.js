@@ -11,9 +11,10 @@ import './app.css'
 export default class App extends Component {
     maxId = 100
     state ={ todoData: [
-        {label: 'Просыпаемся',important: false,id: 1},
-        {label: 'Завтракаем',important: false,id:2},
-        {label: 'уходим',important: false,id:3}        
+        this.createTodoItem('Проснёмся'),
+        this.createTodoItem('Завтракаем'),
+        this.createTodoItem('Уходим')
+             
     ]}
     
     createTodoItem(label) {
