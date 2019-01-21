@@ -51,7 +51,11 @@ export default class App extends Component {
         console.log('important',id)
     }
     onToggleDone = (id) => {
-        console.log('done',id)
+        this.setState(({todoData})=>{
+            const idx=todoData.findIndex((el)=>el.id === id)
+            const oldItem = todoData[idx]
+            const newItem = {...oldItem,done: !oldItem.done}
+        })
     }
     render(){
     return (
