@@ -36,11 +36,7 @@ export default class App extends Component {
     }
 
     ItemAdd = (text) => {
-        const newItem={
-            label: text,
-            important: false,
-            id: this.maxId++
-        }
+        const newItem = this.createTodoItem(text)
         this.setState(({ todoData }) => {
             const newArr= [
                 ...todoData,
