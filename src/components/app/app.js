@@ -62,7 +62,9 @@ export default class App extends Component {
         })
     }
     render(){
+        const doneCount = this.state.todoData.filter((el) =>el.done).length
     return (
+
     <div className="todo-app">
         <AppHeader toDo={1} done={3} />
         <div className="top-panel d-flex">
