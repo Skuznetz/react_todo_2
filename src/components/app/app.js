@@ -64,7 +64,7 @@ export default class App extends Component {
     render(){
         const {todoData} = this.state
         const doneCount = this.state.todoData.filter((el) =>el.done).length
-        const todoCount = thisstate.todoData.length - doneCount
+        const todoCount = this.state.todoData.length - doneCount
     return (
 
     <div className="todo-app">
