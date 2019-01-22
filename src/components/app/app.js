@@ -63,8 +63,8 @@ export default class App extends Component {
     }
     render(){
         const {todoData} = this.state
-        const doneCount = this.state.todoData.filter((el) =>el.done).length
-        const todoCount = this.state.todoData.length - doneCount
+        const doneCount = todoData.filter((el) =>el.done).length
+        const todoCount = todoData.length - doneCount
     return (
 
     <div className="todo-app">
@@ -73,7 +73,7 @@ export default class App extends Component {
             <Search />
             <ItemStatusFilter />
         </div>
-        <TodoList todos = {this.state.todoData}
+        <TodoList todos = {todoData}
                   onDeleted={this.deleteItem}
                   onToggleImportant={this.onToggleImportant}
                   onToggleDone={this.onToggleDone} />
