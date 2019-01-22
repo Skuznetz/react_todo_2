@@ -61,7 +61,7 @@ export default class App extends Component {
        
     }
     onToggleImportant = (id) => {
-        console.log('important',id)
+        
     }
     onToggleDone = (id) => {
         this.setState(({todoData})=>{
