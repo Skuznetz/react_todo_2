@@ -7,6 +7,7 @@ export default class ItemAddForm extends Component{
             <form >
                 <input type="text"
                        className="form-control d-flex"
+                       onChange={this.onLabelChange}
                        placeholder="What needs to be done"
                  />
                 <button  className="btn btn-outline-secondary"
