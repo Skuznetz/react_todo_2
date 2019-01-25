@@ -9,6 +9,10 @@ export default class ItemAddForm extends Component{
             label: e.target.value
         })
     }
+    onSubmit = (e) =>{
+        e.preventDefault()
+        this.props.onItemAdd(this.state.label)
+    }
     render(){
         return (
             <form onSubmit={this.onSubmit}>
@@ -18,7 +22,7 @@ export default class ItemAddForm extends Component{
                        placeholder="What needs to be done"
                  />
                 <button  className="btn btn-outline-secondary"
-                onClick={()=>this.props.onItemAdd('hello')}>Add item</button>
+                >Add item</button>
             </form>
         )
     }
