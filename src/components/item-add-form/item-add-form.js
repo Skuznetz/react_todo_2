@@ -4,9 +4,9 @@ import './item-add-form.css'
 export default class ItemAddForm extends Component{
     render(){
         return (
-            <form>
+            <form >
                 <input type="text"
-                       className="form-control"
+                       className="form-control d-flex"
                        placeholder="What needs to be done"
                  />
                 <button  className="btn btn-outline-secondary"
