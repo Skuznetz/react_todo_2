@@ -78,6 +78,7 @@ export default class App extends Component {
         const {todoData,term} = this.state
         const doneCount = todoData.filter((el) =>el.done).length
         const todoCount = todoData.length - doneCount
+        const visibleItems = this.search(todoData,term)
     return (
 
     <div className="todo-app">
