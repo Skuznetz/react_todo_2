@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{Component} from 'react'
 import './search.css'
-const Search = () => {
+class Search extends Component {
+    return(){
     return (
         <input placeholder="search" />
     )
+    }
 }
 export default Search
