@@ -4,7 +4,7 @@ class Search extends Component {
     state = {term: ''}
     return(){
     return (
-        <input placeholder="search" />
+        <input value={this.state.term} placeholder="search" />
     )
     }
 }
