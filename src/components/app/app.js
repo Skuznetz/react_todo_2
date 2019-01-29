@@ -74,6 +74,13 @@ export default class App extends Component {
             }
        })
     }
+    search(item,term) {
+        if (term.length === 0){
+        return items}
+        return items.filter((item)=>{
+            return item.label.indexOf(term) > -1
+        })
+    }
     render(){
         const {todoData,term} = this.state
         const doneCount = todoData.filter((el) =>el.done).length
