@@ -94,7 +94,7 @@ export default class App extends Component {
             <Search />
             <ItemStatusFilter />
         </div>
-        <TodoList todos = {todoData}
+        <TodoList todos = {visibleItem}
                   onDeleted={this.deleteItem}
                   onToggleImportant={this.onToggleImportant}
                   onToggleDone={this.onToggleDone} />
