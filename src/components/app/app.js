@@ -78,8 +78,11 @@ export default class App extends Component {
         if (term.length === 0){
         return items}
         return items.filter((item)=>{
-            return item.label.indexOf(term) > -1
+            return item.label.toLowerCase().indexOf(term.toLowerCase())>-1
         })
+    }
+    onSearchChange = () => {
+        this.setState({term})
     }
     render(){
         const {todoData,term} = this.state
