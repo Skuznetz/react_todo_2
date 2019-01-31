@@ -74,7 +74,7 @@ export default class App extends Component {
             }
        })
     }
-    search(item,term) {
+    search(items,term) {
         if (term.length === 0){
         return items}
         return items.filter((item)=>{
