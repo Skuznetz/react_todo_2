@@ -7,7 +7,7 @@ class Search extends Component {
         this.setState({term})
         this.props.onSearchChange(term)
     }
-    return(){
+    render(){
     return (
         <input value={this.state.term} onChange={this.onSearchChange} placeholder="search" />
     )
