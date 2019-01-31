@@ -81,7 +81,7 @@ export default class App extends Component {
             return item.label.toLowerCase().indexOf(term.toLowerCase())>-1
         })
     }
-    onSearchChange = () => {
+    onSearchChange = (term) => {
         this.setState({term})
     }
     render(){
