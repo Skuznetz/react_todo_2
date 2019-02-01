@@ -84,6 +84,18 @@ export default class App extends Component {
     onSearchChange = (term) => {
         this.setState({term})
     }
+    filter(items,filter) {
+        switch(filter) {
+            case 'all':
+                return items
+            case 'active':
+                return items.filter((item)=>!item.done)
+            case 'done':
+                return items.filter((item)=>item.done)
+            default:
+                return items
+        }
+    }
     render(){
         const {todoData,term} = this.state
         const doneCount = todoData.filter((el) =>el.done).length
