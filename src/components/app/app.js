@@ -107,7 +107,7 @@ export default class App extends Component {
         <AppHeader toDo={todoCount} done={doneCount} />
         <div className="top-panel d-flex">
             <Search onSearchChange={this.onSearchChange} />
-            <ItemStatusFilter />
+            <ItemStatusFilter filter={filter} />
         </div>
         <TodoList todos = {visibleItems}
                   onDeleted={this.deleteItem}
