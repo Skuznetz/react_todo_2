@@ -1,6 +1,9 @@
 import React from 'react'
 
 class ItemStatusFilter extends React.Component {
+    buttons = [{name: 'all',label: 'All'},
+               {name: 'active',label: 'Active'},
+               {name: 'done',label: 'Done'}]
     render(){
     return (
         <div className="btn-group">
