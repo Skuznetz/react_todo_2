@@ -74,6 +74,9 @@ export default class App extends Component {
             }
        })
     }
+    onFilterChange =(filter)=>{
+        this.setState({filter})
+    }
     search(items,term) {
         if (term.length === 0){
         return items}
