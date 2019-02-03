@@ -14,8 +14,7 @@ export default class App extends Component {
         this.createTodoItem('Проснёмся'),
         this.createTodoItem('Завтракаем'),
         this.createTodoItem('Уходим')
-             
-    ],term: '',filter: 'all'}
+        ],term: '',filter: 'all'}
     
     createTodoItem(label) {
         return {
@@ -117,6 +116,6 @@ export default class App extends Component {
                   onToggleImportant={this.onToggleImportant}
                   onToggleDone={this.onToggleDone} />
         <ItemAddForm onItemAdd={this.ItemAdd} />
-</div>)}
+    </div>)}
 }
 
